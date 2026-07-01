@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder da marca Pérola</title>
+  <desc id="desc">Ilustração abstrata de uma concha com uma pérola central.</desc>
+  <defs>
+    <radialGradient id="pearl" cx="35%" cy="28%" r="70%">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".42" stop-color="#f5e9fa"/>
+      <stop offset="1" stop-color="#cdaee2"/>
+    </radialGradient>
+    <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#eef9f8"/>
+      <stop offset="1" stop-color="#d6e8ed"/>
+    </linearGradient>
+  </defs>
+  <circle cx="360" cy="350" r="255" fill="#f8f5fb"/>
+  <path d="M165 360c0-137 87-248 195-248s195 111 195 248c0 90-44 166-108 204-25-81-49-125-87-172-38 47-62 91-87 172-64-38-108-114-108-204Z" fill="url(#shell)" stroke="#69c9cc" stroke-width="4"/>
+  <g fill="none" stroke="#8bcfd2" stroke-width="3" opacity=".85">
+    <path d="M360 118v274"/>
+    <path d="m278 132 82 260"/>
+    <path d="m211 180 149 212"/>
+    <path d="m174 255 186 137"/>
+    <path d="m442 132-82 260"/>
+    <path d="m509 180-149 212"/>
+    <path d="m546 255-186 137"/>
+  </g>
+  <path d="M360 394c-68-88-151-89-174-18-17 52 33 105 102 111-31 77 5 141 72 88 67 53 103-11 72-88 69-6 119-59 102-111-23-71-106-70-174 18Z" fill="url(#pearl)" stroke="#b68bcf" stroke-width="4"/>
+  <circle cx="360" cy="346" r="43" fill="url(#pearl)" stroke="#ae88c9" stroke-width="4"/>
+  <circle cx="344" cy="329" r="10" fill="#fff" opacity=".9"/>
+  <text x="360" y="655" text-anchor="middle" font-family="Georgia,serif" font-size="70" letter-spacing="12" fill="#55bec2">PÉROLA</text>
+</svg>

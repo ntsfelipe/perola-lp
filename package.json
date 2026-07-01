@@ -1,0 +1,16 @@
+{
+  "name": "perola-lp-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix src/web run dev",
+    "build": "npm --prefix src/web run build",
+    "start": "npm --prefix src/web run start",
+    "lint": "npm --prefix src/web run lint",
+    "typecheck": "npm --prefix src/web run typecheck",
+    "test": "npm --prefix src/web run test",
+    "test:e2e": "npm --prefix src/web run test:e2e"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}

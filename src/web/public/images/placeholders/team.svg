@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" role="img" aria-labelledby="title">
+  <title id="title">Placeholder da equipe</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#d9eeee"/>
+      <stop offset="1" stop-color="#eee5f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="720" rx="36" fill="url(#bg)"/>
+  <circle cx="450" cy="235" r="104" fill="#fff" opacity=".72"/>
+  <circle cx="285" cy="290" r="84" fill="#fff" opacity=".62"/>
+  <circle cx="615" cy="290" r="84" fill="#fff" opacity=".62"/>
+  <path d="M250 610c10-153 87-236 200-236s190 83 200 236" fill="#23787b" opacity=".82"/>
+  <path d="M140 610c10-117 59-183 145-183 49 0 87 22 111 58-31 32-53 75-62 125" fill="#397f86" opacity=".68"/>
+  <path d="M760 610c-10-117-59-183-145-183-49 0-87 22-111 58 31 32 53 75 62 125" fill="#765f91" opacity=".58"/>
+  <text x="450" y="665" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" letter-spacing="5" fill="#15565a">SUBSTITUIR FOTO DA EQUIPE</text>
+</svg>

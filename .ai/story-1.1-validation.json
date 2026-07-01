@@ -1,0 +1,38 @@
+{
+  "story": "1.1",
+  "file": "docs/stories/1.1.landing-page-institucional.md",
+  "validatedAt": "2026-06-24",
+  "validator": "@po",
+  "verdict": "GO",
+  "implementationReadinessScore": 9,
+  "confidence": "high",
+  "statusTransition": {
+    "from": "Draft",
+    "to": "Ready"
+  },
+  "categories": {
+    "templateCompliance": "PASS",
+    "executorAssignment": "PASS",
+    "fileStructure": "PASS",
+    "frontendCompleteness": "PASS",
+    "acceptanceCriteriaCoverage": "PASS",
+    "testingInstructions": "PASS",
+    "securityConsiderations": "PASS",
+    "taskSequence": "PASS",
+    "codeRabbitIntegration": "PASS",
+    "antiHallucination": "PASS",
+    "developerReadiness": "PASS"
+  },
+  "criticalIssues": [],
+  "shouldFix": [],
+  "niceToHave": [
+    "Adicionar README de onboarding em uma story de inicialização ou durante a implementação, sem bloquear a Story 1.1.",
+    "Inicializar o repositório Git antes do fluxo de branch e PR."
+  ],
+  "notes": [
+    "O projeto é greenfield com UI.",
+    "Sanity, blog e deploy efetivo permanecem corretamente fora do escopo.",
+    "A configuração efetiva na Vercel depende de ação posterior e não bloqueia o desenvolvimento local.",
+    "O quality gate formal foi alinhado para @architect; @ux-design-expert permanece como gate especializado."
+  ]
+}
