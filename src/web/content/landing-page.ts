@@ -17,7 +17,7 @@ export const landingPageContent = {
     { id: "team", label: "Equipe", href: "#equipe", visible: true },
     { id: "testimonials", label: "Depoimentos", href: "#depoimentos", visible: true },
     { id: "location", label: "Localização", href: "#localizacao", visible: true },
-    { id: "blog", label: "Blog", href: "/blog", visible: false },
+    { id: "blog", label: "Blog", href: "/blog", visible: true },
   ],
   contact: {
     whatsappNumber: "+55 (12) 99683-8196",
@@ -343,6 +343,7 @@ export const landingPageContent = {
       { label: "Equipe", href: "#equipe" },
       { label: "Clínica", href: "#clinica" },
       { label: "Localização", href: "#localizacao" },
+      { label: "Blog", href: "/blog" },
     ],
     copyright: "© 2026 Pérola Fisioterapia Pélvica. Todos os direitos reservados.",
   },

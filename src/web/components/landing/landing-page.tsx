@@ -1,4 +1,5 @@
 import { ClinicSection } from "@/components/landing/clinic-section";
+import { BlogPreviewSection } from "@/components/landing/blog-preview-section";
 import { FinalCtaSection } from "@/components/landing/final-cta-section";
 import { HeroSection } from "@/components/landing/hero-section";
 import { LocationSection } from "@/components/landing/location-section";
@@ -11,12 +12,14 @@ import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 import type { LandingPageContent } from "@/types/content";
+import type { PostSummary } from "@/types/blog";
 
 type LandingPageProps = {
   content: LandingPageContent;
+  posts?: PostSummary[];
 };
 
-export function LandingPage({ content }: LandingPageProps) {
+export function LandingPage({ content, posts = [] }: LandingPageProps) {
   const whatsappUrl = buildWhatsAppUrl(
     content.contact.whatsappNumber,
     content.contact.whatsappMessage,
@@ -37,6 +40,7 @@ export function LandingPage({ content }: LandingPageProps) {
         <TeamSection content={content.team} />
         <ClinicSection content={content.clinic} />
         <LocationSection content={content.location} contact={content.contact} />
+        <BlogPreviewSection posts={posts} />
         <TestimonialsSection content={content.testimonials} />
         <FinalCtaSection content={content.finalCta} whatsappUrl={whatsappUrl} />
       </main>

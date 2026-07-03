@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title description">
+  <title id="title">Ilustração editorial da clínica Pérola</title>
+  <desc id="description">Composição abstrata em verde e lavanda com uma pérola central.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e3f2f1"/>
+      <stop offset="1" stop-color="#f0e8fb"/>
+    </linearGradient>
+    <radialGradient id="pearl" cx="35%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.7" stop-color="#e8f7f6"/>
+      <stop offset="1" stop-color="#83d4d4"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#background)"/>
+  <circle cx="1020" cy="90" r="250" fill="none" stroke="#23787b" stroke-opacity=".12" stroke-width="3"/>
+  <circle cx="150" cy="620" r="300" fill="#cab2e6" fill-opacity=".22"/>
+  <path d="M410 438c95-178 285-235 420-95-66 170-267 253-420 95Z" fill="#23787b" fill-opacity=".12"/>
+  <circle cx="620" cy="333" r="122" fill="url(#pearl)" stroke="#ffffff" stroke-width="12"/>
+  <circle cx="580" cy="292" r="24" fill="#ffffff" fill-opacity=".72"/>
+  <text x="600" y="555" text-anchor="middle" fill="#15565a" font-family="Georgia, serif" font-size="42" letter-spacing="8">PÉROLA</text>
+</svg>

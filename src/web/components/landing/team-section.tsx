@@ -67,7 +67,7 @@ export function TeamSection({ content }: TeamSectionProps) {
           {content.professionals.length > 0 ? (
             <ul
               aria-label="Profissionais"
-              className="-mx-5 mt-5 flex gap-3 overflow-x-auto px-5 pb-2 [scrollbar-width:none] sm:mx-0 sm:px-0 lg:flex-wrap lg:overflow-visible"
+              className="mt-5 flex flex-wrap gap-3"
             >
               {content.professionals.map((professional) => (
                 <li key={professional.id} className="shrink-0">
@@ -121,11 +121,11 @@ export function TeamSection({ content }: TeamSectionProps) {
             </div>
           ) : null}
           {content.features.length > 0 ? (
-            <ul className="-mx-5 mt-8 flex gap-3 overflow-x-auto px-5 pb-2 [scrollbar-width:none] sm:mx-0 sm:px-0 lg:grid lg:overflow-visible">
+            <ul className="mt-8 grid gap-3">
               {content.features.map((feature) => (
                 <li
                   key={feature}
-                  className="flex min-w-[16rem] items-start gap-3 rounded-lg bg-white/75 p-4 text-[var(--ink)] shadow-sm lg:min-w-0 lg:bg-transparent lg:p-0 lg:shadow-none"
+                  className="flex min-w-0 items-start gap-3 rounded-lg bg-white/75 p-4 text-[var(--ink)] shadow-sm lg:bg-transparent lg:p-0 lg:shadow-none"
                 >
                   <CheckCircle2
                     aria-hidden="true"

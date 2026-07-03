@@ -178,7 +178,7 @@ function TestimonialFigure({ item }: { item: Testimonial }) {
         ))}
       </div>
       <blockquote className="mt-6 flex-1 text-base leading-8 text-[var(--muted)]">
-        "{item.quote}"
+        &ldquo;{item.quote}&rdquo;
       </blockquote>
       <figcaption className="mt-8 flex items-center gap-3">
         <span className="grid size-11 place-items-center rounded-full bg-[var(--surface-strong)] text-sm font-bold text-[var(--ink)]">

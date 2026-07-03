@@ -53,7 +53,7 @@ export function ClinicSection({ content }: ClinicSectionProps) {
             description={content.description}
           />
           {content.features.length > 0 ? (
-            <div className="-mx-5 mt-8 flex gap-3 overflow-x-auto px-5 pb-2 [scrollbar-width:none] sm:mx-0 sm:px-0 lg:mt-10 lg:grid lg:overflow-visible">
+            <div className="mt-8 grid gap-3 lg:mt-10">
               {content.features.map((feature) => (
                 <ClinicFeature key={feature.id} feature={feature} />
               ))}
@@ -69,7 +69,7 @@ function ClinicFeature({ feature }: { feature: Feature }) {
   const Icon = icons[feature.icon];
 
   return (
-    <div className="flex min-w-[16.5rem] gap-4 rounded-lg bg-white/80 p-4 shadow-sm lg:min-w-0 lg:bg-transparent lg:p-0 lg:shadow-none">
+    <div className="flex min-w-0 gap-4 rounded-lg bg-white/80 p-4 shadow-sm lg:bg-transparent lg:p-0 lg:shadow-none">
       <span className="grid size-12 shrink-0 place-items-center rounded-full bg-[var(--lavender-soft)] text-[var(--lavender-dark)]">
         <Icon aria-hidden="true" className="size-5" />
       </span>

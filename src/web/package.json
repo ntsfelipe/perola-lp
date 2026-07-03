@@ -9,18 +9,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint app components content lib types tests next.config.ts playwright.config.ts vitest.config.mts",
+    "lint": "eslint app components content lib sanity types tests next.config.ts sanity.config.ts sanity.cli.ts playwright.config.ts vitest.config.mts",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:e2e": "playwright test"
+    "test:e2e": "node tests/run-e2e.mjs"
   },
   "dependencies": {
+    "@portabletext/react": "^6.2.0",
     "lucide-react": "^0.468.0",
     "motion": "^12.0.0",
     "next": "16.2.9",
-    "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "next-sanity": "^13.1.1",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "sanity": "^6.3.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.49.0",

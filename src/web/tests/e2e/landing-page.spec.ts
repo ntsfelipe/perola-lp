@@ -16,9 +16,12 @@ test.describe("Landing page", () => {
     expect(consoleErrors).toEqual([]);
   });
 
-  test("does not expose an unavailable blog route", async ({ page }) => {
+  test("exposes the available blog route", async ({ page }) => {
     await page.goto("/");
-    await expect(page.getByRole("link", { name: "Blog" })).toHaveCount(0);
+    expect(await page.getByRole("link", { name: "Blog" }).count()).toBeGreaterThan(0);
+
+    await page.goto("/blog");
+    await expect(page.getByRole("heading", { level: 1 })).toContainText("Informação");
   });
 
   test("WhatsApp CTA uses an encoded configurable URL", async ({ page }) => {
@@ -27,7 +30,7 @@ test.describe("Landing page", () => {
     const cta = page.getByRole("link", { name: /Agendar consulta/ }).first();
     await expect(cta).toHaveAttribute(
       "href",
-      /https:\/\/wa\.me\/5500000000000\?text=Ol%C3%A1/,
+      /https:\/\/wa\.me\/\d+\?text=Ol%C3%A1/,
     );
     await expect(cta).toHaveAttribute("rel", "noopener noreferrer");
   });
@@ -50,6 +53,43 @@ test.describe("Landing page", () => {
       () => document.documentElement.scrollWidth > document.documentElement.clientWidth,
     );
     expect(hasOverflow).toBe(false);
+  });
+});
+
+test.describe("Blog", () => {
+  test("loads the public listing with security headers and no console errors", async ({
+    page,
+  }) => {
+    const consoleErrors: string[] = [];
+    page.on("console", (message) => {
+      if (message.type() === "error") {
+        consoleErrors.push(message.text());
+      }
+    });
+
+    const response = await page.goto("/blog");
+
+    expect(response?.status()).toBe(200);
+    expect(response?.headers()["x-content-type-options"]).toBe("nosniff");
+    await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+    expect(consoleErrors).toEqual([]);
+  });
+
+  test("returns 404 for a malicious slug", async ({ page }) => {
+    const response = await page.goto("/blog/x%22%5D%20%7C%20*%5Btrue%5D");
+    expect(response?.status()).toBe(404);
+  });
+
+  test("serves a non-indexable Studio shell", async ({ page }, testInfo) => {
+    test.skip(testInfo.project.name !== "desktop-1024", "One browser profile is sufficient");
+
+    const response = await page.goto("/studio", {
+      waitUntil: "domcontentloaded",
+      timeout: 20_000,
+    });
+
+    expect(response?.status()).toBe(200);
+    await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
   });
 });
 

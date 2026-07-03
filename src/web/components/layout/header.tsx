@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { Container } from "@/components/ui/container";
 import { ButtonLink } from "@/components/ui/button-link";
 import { MobileNavigation } from "@/components/layout/mobile-navigation";
@@ -8,6 +10,7 @@ type HeaderProps = {
   navigation: LandingPageContent["navigation"];
   whatsappUrl: string;
   ctaLabel: string;
+  homeHref?: string;
 };
 
 export function Header({
@@ -15,6 +18,7 @@ export function Header({
   navigation,
   whatsappUrl,
   ctaLabel,
+  homeHref = "#inicio",
 }: HeaderProps) {
   const visibleItems = navigation.filter((item) => item.visible);
 
@@ -22,7 +26,7 @@ export function Header({
     <header className="sticky top-0 z-50 border-b border-[var(--line)] bg-[rgba(250,248,244,0.9)] backdrop-blur-xl">
       <Container className="relative flex min-h-20 items-center justify-between gap-6">
         <a
-          href="#inicio"
+          href={homeHref}
           aria-label={`${brand.name}, voltar ao início`}
           className="flex items-center gap-3 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--focus)]"
         >
@@ -30,7 +34,14 @@ export function Header({
             aria-hidden="true"
             className="grid size-15 place-items-center"
           >
-            <img src={brand.logoUrl} alt={brand.name} className="size-full object-contain" />
+            <Image
+              src={brand.logoUrl}
+              alt={brand.name}
+              width={60}
+              height={60}
+              priority
+              className="size-full object-contain"
+            />
           </span>
           <span className="font-editorial text-2xl tracking-[0.12em] text-[var(--brand-dark)]">
             {brand.name}

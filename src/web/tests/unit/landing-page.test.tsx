@@ -6,6 +6,7 @@ import { Header } from "@/components/layout/header";
 import { landingPageContent } from "@/content/landing-page";
 
 vi.mock("motion/react", () => ({
+  AnimatePresence: ({ children }: { children: React.ReactNode }) => children,
   motion: {
     div: ({
       children,
@@ -36,10 +37,10 @@ describe("LandingPage", () => {
     ).toBeInTheDocument();
   });
 
-  it("does not render disabled navigation items", () => {
+  it("renders the blog navigation when the route is available", () => {
     render(<LandingPage content={landingPageContent} />);
 
-    expect(screen.queryByRole("link", { name: "Blog" })).not.toBeInTheDocument();
+    expect(screen.getAllByRole("link", { name: "Blog" })).not.toHaveLength(0);
   });
 
   it("hides sections with empty lists", () => {
