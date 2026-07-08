@@ -349,6 +349,7 @@ export const landingPageContent = {
       { label: "Clínica", href: "#clinica" },
       { label: "Localização", href: "#localizacao" },
       { label: "Blog", href: "/blog" },
+      { label: "Gestão de conteúdo", href: "/studio" },
     ],
     copyright: "© 2026 Pérola Fisioterapia Pélvica. Todos os direitos reservados.",
   },
