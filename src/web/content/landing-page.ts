@@ -107,9 +107,9 @@ export const landingPageContent = {
         name: "Erica Luisa",
         role: "Fisioterapeuta pélvica e obstétrica",
         bio: `Dra. Erica conhecida como Pérola 😅
-Uma filha Amanda de Deus , e servindo com propósito o trabalho que Deus me capacitou .
+Uma filha amada de Deus , e servindo com propósito o trabalho que Deus me capacitou.
 Pós graduada pela faculdade inspirar da vila Mariana em SP, formada a 8 anos e a 7 anos se dedica aos atendimentos de fisioterapia pélvica e obstétrica ,faz acompanhamento de fisioterapia intraparto .
-Criou a empresa Pérola pélvica fisioterapia já 5 anos . E desde então vem trazendo conhecimento a comunidade com palestras gratuitas, atendimentos solidários .`,
+Criou a empresa Pérola pélvica fisioterapia já 5 anos. E, desde então, vem trazendo conhecimento a comunidade com palestras gratuitas, atendimentos solidários.`,
         image: {
           src: "/images/imagens/erica-3.jpeg",
           alt: "Retrato de Erica Luisa",
