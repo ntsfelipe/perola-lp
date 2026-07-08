@@ -23,7 +23,7 @@ export const landingPageContent = {
     whatsappNumber: "+55 (12) 99683-8196",
     whatsappMessage:
       "Olá! Gostaria de saber mais sobre os atendimentos da clínica Pérola.",
-    address: "Rua José Alves dos Santos, 281 Edifico New Port, sala 305, 3 andar - Floradas de São José, São José dos Campos - SP, 12230-081",
+    address: "Rua José Alves dos Santos, 281 Edifico New Port - Floradas de São José, São José dos Campos - SP, 12230-081",
     mapUrl: "https://www.google.com/maps/place/P%C3%A9rola+P%C3%A9lvica+Fisioterapia/@-23.2194421,-45.889989,17z/data=!4m6!3m5!1s0x94cc4b7ab3810545:0x85fc81dc0f1a6556!8m2!3d-23.2194421!4d-45.889989!16s%2Fg%2F11qh239mk1?entry=ttu&g_ep=EgoyMDI2MDYyOC4wIKXMDSoASAFQAw%3D%3D",
     instagramUrl: "https://www.instagram.com/perola.pelvica/",
   },
@@ -282,7 +282,7 @@ Meu trabalho é caminhar ao lado da gestante, fortalecendo sua confiança, acolh
     eyebrow: "Onde estamos",
     title: "Cuidado próximo, acesso simples.",
     description:
-      "Substitua este conteúdo pelo endereço definitivo e pelas orientações de acesso à clínica.",
+      "",
     ctaLabel: "Abrir no mapa",
     images: [
       {
