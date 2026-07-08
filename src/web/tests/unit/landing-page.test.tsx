@@ -24,17 +24,22 @@ describe("LandingPage", () => {
     expect(
       screen.getByRole("heading", { level: 2, name: "Nossas especialidades" }),
     ).toBeInTheDocument();
-    expect(screen.getByRole("heading", { level: 3, name: "Erica" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { level: 3, name: "Érica Luisa" }),
+    ).toBeInTheDocument();
   });
 
   it("updates selected professional details from the team portraits", () => {
     render(<LandingPage content={landingPageContent} />);
 
-    fireEvent.click(screen.getByTitle("Bianca Fernandes - Fisioterapeuta"));
+    fireEvent.click(screen.getByTitle("Bianca Fernandes - Fisioterapeuta pélvica"));
 
     expect(
       screen.getByRole("heading", { level: 3, name: "Bianca Fernandes" }),
     ).toBeInTheDocument();
+    expect(
+      screen.getAllByText(/olhar atento para cada história/i),
+    ).not.toHaveLength(0);
   });
 
   it("renders the blog navigation when the route is available", () => {

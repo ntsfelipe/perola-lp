@@ -93,6 +93,16 @@ export function TeamSection({ content }: TeamSectionProps) {
               ))}
             </ul>
           ) : null}
+          {selectedProfessional?.bio ? (
+            <div className="mt-6 rounded-lg bg-white/75 p-4 shadow-sm lg:hidden">
+              <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--brand)]">
+                Sobre a profissional
+              </p>
+              <p className="mt-3 leading-7 text-[var(--muted)]">
+                {selectedProfessional.bio}
+              </p>
+            </div>
+          ) : null}
         </Reveal>
 
         <Reveal delay={0.1} className="min-w-0">
