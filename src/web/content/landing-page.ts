@@ -104,18 +104,21 @@ export const landingPageContent = {
     professionals: [
       {
         id: "erica",
-        name: "Érica Luisa",
+        name: "Erica Luisa",
         role: "Fisioterapeuta pélvica e obstétrica",
-        bio: "Dra. Érica, conhecida como Pérola, serve com propósito o trabalho para o qual se preparou. Pós-graduada pela Faculdade Inspirar da Vila Mariana, em São Paulo, é formada há 8 anos e há 7 anos se dedica aos atendimentos de fisioterapia pélvica e obstétrica, incluindo acompanhamento de fisioterapia intraparto. Criou a Pérola Pélvica Fisioterapia há 5 anos e, desde então, vem levando conhecimento à comunidade por meio de palestras gratuitas e atendimentos solidários.",
+        bio: `Dra. Erica conhecida como Pérola 😅
+Uma filha Amanda de Deus , e servindo com propósito o trabalho que Deus me capacitou .
+Pós graduada pela faculdade inspirar da vila Mariana em SP, formada a 8 anos e a 7 anos se dedica aos atendimentos de fisioterapia pélvica e obstétrica ,faz acompanhamento de fisioterapia intraparto .
+Criou a empresa Pérola pélvica fisioterapia já 5 anos . E desde então vem trazendo conhecimento a comunidade com palestras gratuitas, atendimentos solidários .`,
         image: {
           src: "/images/imagens/erica-3.jpeg",
-          alt: "Retrato de Érica Luisa",
+          alt: "Retrato de Erica Luisa",
           width: 1103,
           height: 1600,
         },
         detailImage: {
           src: "/images/imagens/erica-1.jpeg",
-          alt: "Retrato de Érica Luisa",
+          alt: "Retrato de Erica Luisa",
           width: 1425,
           height: 2048,
         },
@@ -124,7 +127,9 @@ export const landingPageContent = {
         id: "bianca-fernandes",
         name: "Bianca Fernandes",
         role: "Fisioterapeuta pélvica",
-        bio: "Fisioterapeuta pélvica com especializações em Saúde da Mulher e do Homem e em Sexualidade Humana. Bianca encontrou na fisioterapia a missão de servir com amor, acolhimento e propósito. Dedica seu trabalho ao cuidado de mulheres que convivem com dor na relação sexual e de homens que precisam de cuidados com a saúde pélvica, oferecendo um atendimento humanizado, com ciência, sensibilidade e olhar atento para cada história.",
+        bio: `Sou Bianca Fernandes, Fisioterapeuta Pélvica, filha de Deus e filha de Maria. Tenho a alegria de caminhar ao lado do meu companheiro, Eduardo, e, juntos, vivemos com fé a beleza da abertura ao dom da vida.
+
+Com especializações em Saúde da Mulher e do Homem e em Sexualidade Humana, encontrei na fisioterapia a missão de servir com amor, acolhimento e propósito. Dedico meu trabalho ao cuidado de mulheres que convivem com dor na relação sexual e de homens que precisam de cuidados com a saúde pélvica, oferecendo um atendimento humanizado, com ciência, sensibilidade e um olhar atento para cada história.`,
         image: {
           src: "/images/imagens/bianca-fernandes-fisioterapeuta.jpeg",
           alt: "Retrato de Bianca Fernandes",
@@ -135,8 +140,8 @@ export const landingPageContent = {
       {
         id: "gabriela-furtado",
         name: "Gabriela Furtado",
-        role: "Fisioterapeuta pélvica",
-        bio: "Dra. Gabriela é caiçara de coração e de origem, mas foi subindo a serra que encontrou seu propósito. Pós-graduada e atuante na área da saúde da mulher e obstétrica desde 2024, ingressou na equipe da Pérola Pélvica em 2025 para somar conhecimento técnico, busca constante por aperfeiçoamento e alegria no cuidado. Dedica-se a oferecer um atendimento acolhedor, humanizado, individualizado e baseado em evidências, para que cada paciente se sinta segura, respeitada e bem assistida.",
+        role: "Fisioterapeuta",
+        bio: "Dra. Gabriela é caiçara de coração e de origem, mas foi subindo a serra que encontrou seu propósito. Pós-graduada e atuante na área da saúde da mulher e obstétrica desde 2024, ingressou na equipe da Pérola Pélvica em 2025 para somar seu conhecimento técnico, sua constante busca por aperfeiçoamento e sua alegria contagiante. Com muita fé, acredita que Deus conduz cada passo de sua caminhada e, inspirada por esse propósito, dedica-se a oferecer um atendimento acolhedor, humanizado, individualizado e baseado em evidências, para que cada paciente se sinta segura, respeitada e bem assistida.",
         image: {
           src: "/images/imagens/gabriela-furtado-fisioterapeuta-pelvica.jpeg",
           alt: "Retrato de Gabriela Furtado",
@@ -147,8 +152,11 @@ export const landingPageContent = {
       {
         id: "gabriela-gregorio",
         name: "Gabriela Gregório",
-        role: "Doula e educadora perinatal",
-        bio: "Doula, educadora perinatal e facilitadora em aleitamento materno, Gabriela acompanha gestantes e famílias durante a jornada do ciclo gravídico-puerperal. Sua atuação nasce do desejo de compartilhar com outras mulheres o suporte e o acolhimento que recebeu. Acredita em uma assistência baseada em evidência científica, respeito, escuta e protagonismo da gestante, caminhando ao lado de cada família para fortalecer confiança e contribuir para uma experiência de parto mais consciente e respeitosa.",
+        role: "Doula",
+        bio: `Doula, educadora perinatal e facilitadora em aleitamento materno, mãe do Antônio de 8 anos, esposa e uma mulher apaixonada em acompanhar gestantes e famílias durante sua jornada no ciclo gravídico puerperal.
+Busquei minha formação e aprimoramento, no intuito de compartilhar com outras mulheres o suporte e acolhimento que recebi.
+Acredito na assistência baseada em evidencia cientifica, respeito, escuta e protagonismo da gestante, oferecendo suporte em cada etapa do processo.
+Meu trabalho é caminhar ao lado da gestante, fortalecendo sua confiança, acolhendo suas escolhas e contribuindo para uma experiencia de parto mais consciente e respeitosa.`,
         image: {
           src: "/images/imagens/gabriela-gregorio-doula.jpeg",
           alt: "Retrato de Gabriela Gregório",
@@ -171,7 +179,7 @@ export const landingPageContent = {
         id: "naiara-guimaraes",
         name: "Naiara Guimarães",
         role: "Fisioterapeuta pélvica",
-        bio: "Dra. Naiara Guimarães é fisioterapeuta pélvica especialista em saúde da mulher, formada há 15 anos e há 5 anos com foco em saúde da mulher e gestantes. Sua missão é ajudar cada mulher a viver uma gestação mais leve e um parto mais humanizado, guiada pelo amor, pelo cuidado e por uma atuação acolhedora.",
+        bio: "Sou a Dra. Naiara Guimarães, fisioterapeuta pélvica especialista em saúde da mulher, formada a 15 anos e a 5 anos com foco em saúde da mulher e gestantes. Sou cristã, esposa do Raphael e, com fé, vivendo a doce espera pelo nosso milagre em sermos pais. Minha missão é ajudar cada mulher a viver uma gestação mais leve e um parto mais humanizado, guiada pelo amor e cuidado que vêm de Deus.",
         image: {
           src: "/images/imagens/naiara-guimaraes-fisioterapeuta-pelvica.jpeg",
           alt: "Retrato de Naiara Guimarães",

@@ -25,7 +25,7 @@ describe("LandingPage", () => {
       screen.getByRole("heading", { level: 2, name: "Nossas especialidades" }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { level: 3, name: "Érica Luisa" }),
+      screen.getByRole("heading", { level: 3, name: "Erica Luisa" }),
     ).toBeInTheDocument();
   });
 
@@ -38,7 +38,7 @@ describe("LandingPage", () => {
       screen.getByRole("heading", { level: 3, name: "Bianca Fernandes" }),
     ).toBeInTheDocument();
     expect(
-      screen.getAllByText(/olhar atento para cada história/i),
+      screen.getAllByText(/um olhar atento para cada história/i),
     ).not.toHaveLength(0);
   });
 
