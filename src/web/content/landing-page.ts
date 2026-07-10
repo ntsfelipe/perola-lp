@@ -168,6 +168,7 @@ Meu trabalho é caminhar ao lado da gestante, fortalecendo sua confiança, acolh
         id: "luana-toledo",
         name: "Luana Toledo",
         role: "Nutricionista",
+        bio: "Dra. Luana Mãe, cristã, nutri, bailarina e professora! Pós graduada pela Faculdade Líbano, formada pela Univap se dedica aos atendimentos nutricionais de adultos, com ênfase em saúde da mulher e longevidade.",
         image: {
           src: "/images/imagens/luana-toledo-nutricionista.jpeg",
           alt: "Retrato de Luana Toledo",
